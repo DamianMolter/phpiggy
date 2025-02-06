@@ -1,13 +1,7 @@
 {
-    "name": "lenovo/phpiggy",
-    "description": "A PHP application for tracking expenses",
+    "name": "um/phpiggy",
+    "description": "PHP application for trafic expenses.",
     "type": "project",
-    "authors": [
-        {
-            "name": "Damian Molter",
-            "email": "damian.molter.programista@gmail.com"
-        }
-    ],
     "require": {},
     "autoload": {
         "psr-4":{
@@ -15,4 +9,5 @@
             "App\\": "src/App"
         }
     }
+
 }
