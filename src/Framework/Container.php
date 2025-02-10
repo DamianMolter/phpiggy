@@ -48,10 +48,10 @@ class Container
                         throw new ContainerExceptions("Failed to resolve class {$className} because invalid param name!");
                   }
 
-                  $dependencies = $this->get($type->getName());
+                  $dependencies[] = $this->get($type->getName());
             }
 
-            return $reflectionClass->newInstance($dependencies);
+            return $reflectionClass->newInstanceArgs($dependencies);
       }
 
       public function get(string $id)
