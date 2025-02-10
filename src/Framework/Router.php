@@ -4,8 +4,6 @@ declare(strict_types=1);
 
 namespace Framework;
 
-use function PHPSTORM_META\map;
-
 class Router
 {
 
