@@ -15,6 +15,7 @@ $dotenv->load();
 
 $app = new App(Paths::SOURCE . "App/Config/container-definitions.php");
 
+
 registerRoutes($app);
 registerMiddleware($app);
 
