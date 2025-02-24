@@ -3,10 +3,12 @@
 include __DIR__ . '/src/Framework/Database.php';
 
 use Framework\Database;
+use App\Config\Paths;
 use Dotenv\Dotenv;
 
-$dotenv = Dotenv::createImmutable('./');
+$dotenv = Dotenv::createImmutable(Paths::ROOT);
 $dotenv->load();
+
 
 $db = new Database($_ENV['DB_DRIVER'], [
       'host' => $_ENV['DB_HOST'],
